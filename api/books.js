@@ -2,6 +2,8 @@
 const express = require("express");
 const app = express();
 
+const cors = require("cors");
+app.use(cors());
 // Import Book model
 require("./Book");
 
